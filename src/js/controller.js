@@ -126,6 +126,10 @@ const controllAddRecipe = async function (newRecipe) {
   }
 };
 
+const new_feature = function () {
+  console.log('im new feature');
+};
+
 const init = function () {
   addRecipeView.addHanlerUpload(controllAddRecipe);
   bookmarksView.addHandlerrender(controllBookmarks);
@@ -134,5 +138,7 @@ const init = function () {
   recipeView.addHandlerAddBookMark(controllAddBookMark);
   recipeSearchView.addHandlerSearch(controllSearchRecipe);
   paginationView.addHandlerClick(controllPagination);
+  new_featur();
+  console.log('zahra');
 };
 init();
